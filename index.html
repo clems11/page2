@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        hello how are you
+    </div>
+    <div ng-app="myApp">
+
+  
+    <div ng-controller="myController">
+        <input type="text" name="fname" value="" placeholder="enter first name"/>
+        <br />
+        <input type="text" name="lname" value="" placeholder="enter last name"/>
+        <br />
+       {{title}}
+    </div>
+        <br />
+        <br />
+
+        <a href="views/jquery-pract.html" target="_self">jquery pract</a>
+    
+
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCvXcA3W3-KrbT28AkNem_vP2HBPcpIPq4",
+            authDomain: "proj1-ddb30.firebaseapp.com",
+            databaseURL: "https://proj1-ddb30.firebaseio.com",
+            storageBucket: "proj1-ddb30.appspot.com",
+            messagingSenderId: "637086100828"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="js/app1/app1.js"></script>
+    <script src="js/app1/control-app1.js"></script>
+    <script src="js/js.js"></script>
+    
+</body>
+</html>
